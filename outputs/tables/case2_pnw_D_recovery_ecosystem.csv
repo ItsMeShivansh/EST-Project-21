@@ -1,0 +1,4 @@
+lc_group,group,n,rec_months_median,not_recovered_frac
+Forest,Double-hit,4,31.0,0.5
+Grassland,Double-hit,3,5.0,0.0
+Savanna,Double-hit,10,39.0,1.0

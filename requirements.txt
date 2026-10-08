@@ -1,0 +1,14 @@
+earthengine-api==1.7.46
+numpy==2.5.3
+pandas==2.3.3
+xarray==2026.9.0
+netCDF4==1.7.4
+scipy==1.18.1
+statsmodels==0.15.0
+scikit-learn==1.9.1
+lifelines==0.30.3
+ruptures==1.1.10
+matplotlib==3.11.2
+Cartopy==0.26.0
+PyYAML==6.0.3
+requests==2.34.2

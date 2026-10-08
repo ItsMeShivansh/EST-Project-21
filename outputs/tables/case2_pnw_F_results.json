@@ -1,0 +1,24 @@
+{
+  "precip": {
+    "pixel_r": 0.9262782373787006,
+    "regional_monthly_r": 0.9794207738566902,
+    "bias_mm_month": 10.06622314453125,
+    "rel_bias_pct": 15.01810359954834
+  },
+  "spei_vs_soil_moisture_r": 0.48503602918838545,
+  "fire": {
+    "modis_vs_viirs_spearman": 0.6335517150580554,
+    "p": 0.0,
+    "burned_cells_with_viirs_pct": 97.72727272727273,
+    "viirs_cells_burned_pct": 7.072368421052632
+  },
+  "threshold_test": {
+    "main_threshold": 2.0,
+    "alt_threshold": 3.0,
+    "main_diff": -0.2663559019565582,
+    "main_p": 3.893514440278523e-05,
+    "alt_diff": 0.1413932740688324,
+    "alt_p": 0.024110957980155945,
+    "same_sign": false
+  }
+}

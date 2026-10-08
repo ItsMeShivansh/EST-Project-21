@@ -1,0 +1,52 @@
+# Case definitions. Dates are inclusive months (YYYY-MM).
+# bbox = [lon_min, lat_min, lon_max, lat_max]
+
+common:
+  start: "2001-01"
+  end: "2024-12"
+  baseline: ["2001-01", "2016-12"]
+  grid_deg: 0.1             # analysis grid (ERA5-Land native)
+  natural_lc: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]   # IGBP forest/shrub/savanna/grass
+  min_natfrac: 0.6          # keep cells that are >= 60% natural vegetation
+  burned_frac: 0.3          # cell counts as burned if >= 30% of it burned in the fire window
+  recovery_burned_frac: 0.6 # recovery analysis uses heavily burned cells only (less dilution
+                            # by the unburned part of a 0.1 deg cell)
+  unburned_frac: 0.02       # cell counts as unburned if < 2% burned
+  recovery_fraction: 0.9    # recovered when NDVI >= 90% of its seasonal baseline
+  recovery_consecutive: 3   # ... for 3 consecutive months
+  bootstrap: 1000
+  seed: 42
+
+mid_eval_cases: [case1_australia, case2_pnw]
+
+cases:
+  case1_australia:
+    title: "SE Australia: Drought -> Heat + Fire"
+    short: "Drought first (SE Australia)"
+    first_extreme: drought
+    bbox: [141.0, -39.0, 154.0, -28.0]
+    event1: ["2017-01", "2019-11"]        # 2017-19 drought
+    event1_threshold: -1.5                # minimum SPEI-12 <= -1.5 -> hit by event 1
+    event1_threshold_alt: -1.0            # robustness test
+    event2: ["2019-12", "2020-02"]        # heatwaves + Black Summer fire peak
+    fire_window: ["2019-07", "2020-03"]
+    daily_window: ["2019-10", "2020-03"]  # daily Tmax for heatwave detection
+    pre_window: ["2014-01", "2016-12"]    # pre-event reference
+    recovery_start: "2020-03"
+    post_window: ["2021-03", "2022-02"]   # year 2 after the fires (Lloret 'post')
+
+  case2_pnw:
+    title: "Pacific NW: Heat dome -> Drought + Fire"
+    short: "Heat first (Pacific NW)"
+    first_extreme: heat
+    bbox: [-124.0, 42.0, -117.0, 49.0]
+    event1: ["2021-06", "2021-07"]        # heat dome
+    event1_days: ["2021-06-25", "2021-07-02"]
+    event1_threshold: 2.0                 # peak daily Tmax anomaly >= 2 SD -> hit by event 1
+    event1_threshold_alt: 3.0             # 1.5 SD leaves no unexposed cells (dome hit ~everything)
+    event2: ["2021-08", "2021-09"]        # late-summer drought + fire, after the dome
+    fire_window: ["2021-07", "2021-10"]
+    daily_window: ["2021-06", "2021-09"]
+    pre_window: ["2018-01", "2020-12"]
+    recovery_start: "2021-10"
+    post_window: ["2022-10", "2023-09"]

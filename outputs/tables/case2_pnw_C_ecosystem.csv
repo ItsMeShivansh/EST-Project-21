@@ -1,0 +1,2 @@
+lc_group,n_pairs,mean_hit,mean_control,diff,ci_lo,ci_hi,mwu_p,cliffs_delta
+Grassland,98,-0.19814807,0.08777679,-0.28592488,-0.40071702,-0.15914313,2.506439e-05,-0.34839650145772594

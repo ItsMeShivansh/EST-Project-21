@@ -1,0 +1,2 @@
+lc_group,n_pairs,mean_hit,mean_control,diff,ci_lo,ci_hi,mwu_p,cliffs_delta
+Forest,12,-0.99546796,-0.7539831,-0.2414848,-0.46242717,0.00769761,0.034613818,-0.5138888888888888

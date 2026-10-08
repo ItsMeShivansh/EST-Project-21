@@ -1,0 +1,5 @@
+group,n,resistance,recovery,resilience,rec_months_median,rec_months_gpp_median,not_recovered_gpp_frac,tau_median,deficit_mean,not_recovered_frac,state_shift_frac
+Double-hit,343,0.56742346,1.7290766,0.9798239,6.0,8.0,0.0,5.477517114484615,2.037781,0.0,0.0
+Event 2 only,8,0.5842062,1.6059754,0.96638954,5.0,8.0,0.0,4.654758805851853,1.3679602,0.0,0.0
+Event 1 only,4401,0.7174273,1.4091662,1.0375388,0.0,0.0,0.0,,1.1443243,0.0,0.0
+Neither,1787,0.6914591,1.3864129,1.0287582,0.0,0.0,0.0,,2.0804586,0.0,0.0

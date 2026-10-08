@@ -1,0 +1,5 @@
+lc_group,group,n,rec_months_median,not_recovered_frac
+Forest,Double-hit,318,7.0,0.0
+Forest,Event 2 only,8,5.0,0.0
+Grassland,Double-hit,13,0.0,0.0
+Savanna,Double-hit,12,6.0,0.0

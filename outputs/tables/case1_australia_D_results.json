@@ -1,0 +1,66 @@
+{
+  "km_median_months": {
+    "Double-hit": 6.0,
+    "Event 2 only": 7.0,
+    "Event 1 only": 0.0,
+    "Neither": 0.0
+  },
+  "logrank": {
+    "Double-hit vs Event 2 only": {
+      "p": 0.8512217558049686,
+      "stat": 0.03517867189383247,
+      "n": [
+        343,
+        8
+      ]
+    },
+    "Event 1 only vs Neither": {
+      "p": 6.459788584947806e-11,
+      "stat": 42.676065282822385,
+      "n": [
+        4401,
+        1787
+      ]
+    }
+  },
+  "terciles_burned": {
+    "rec_months": {
+      "n_top": 163,
+      "n_bottom": 46,
+      "p": 0.3376626921757879,
+      "median_top": 6.0,
+      "median_bottom": 7.0,
+      "not_recovered_top": 0.0,
+      "not_recovered_bottom": 0.0
+    },
+    "rec_months_gpp": {
+      "n_top": 163,
+      "n_bottom": 46,
+      "p": 0.48171550795357876,
+      "median_top": 8.0,
+      "median_bottom": 8.0,
+      "not_recovered_top": 0.0,
+      "not_recovered_bottom": 0.0
+    }
+  },
+  "km_median_months_gpp": {
+    "Double-hit": 8.0,
+    "Event 2 only": 8.0,
+    "Event 1 only": 0.0,
+    "Neither": 0.0
+  },
+  "status_share": {
+    "Double-hit": {
+      "Recovered": 1.0
+    },
+    "Event 2 only": {
+      "Recovered": 1.0
+    },
+    "Event 1 only": {
+      "Recovered": 1.0
+    },
+    "Neither": {
+      "Recovered": 1.0
+    }
+  }
+}

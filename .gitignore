@@ -1,0 +1,10 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Download cache and regenerated intermediates (rebuilt by gee/export_data.py and run_all.py)
+data/
+
+# OS
+.DS_Store

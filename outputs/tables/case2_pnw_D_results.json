@@ -1,0 +1,49 @@
+{
+  "km_median_months": {
+    "Double-hit": Infinity,
+    "Event 1 only": 0.0,
+    "Neither": 0.0
+  },
+  "logrank": {
+    "Event 1 only vs Neither": {
+      "p": 0.44103609408431554,
+      "stat": 0.5935851719026289,
+      "n": [
+        2992,
+        90
+      ]
+    }
+  },
+  "terciles_burned": {},
+  "km_median_months_gpp": {
+    "Double-hit": Infinity,
+    "Event 1 only": 8.0,
+    "Neither": 7.0
+  },
+  "status_share": {
+    "Double-hit": {
+      "Not recovering": 0.11764705882352941,
+      "Recovered": 0.29411764705882354,
+      "State shift": 0.5882352941176471,
+      "Still recovering": NaN
+    },
+    "Event 2 only": {
+      "Not recovering": NaN,
+      "Recovered": NaN,
+      "State shift": NaN,
+      "Still recovering": NaN
+    },
+    "Event 1 only": {
+      "Not recovering": 0.001002673796791444,
+      "Recovered": 0.9983288770053476,
+      "State shift": NaN,
+      "Still recovering": 0.0006684491978609625
+    },
+    "Neither": {
+      "Not recovering": NaN,
+      "Recovered": 1.0,
+      "State shift": NaN,
+      "Still recovering": NaN
+    }
+  }
+}
